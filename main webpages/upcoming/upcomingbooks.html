@@ -24,57 +24,112 @@
 </head>
 
 <body>
-
-  <div class="div-container">
-    <div class="logo">
-      <a href="/mainpage.html"><img src="/logo.png" /></a>
-    </div>
-    <div class="nav">
-      <div id="drop-down">
-        <button id="menu-btn">
-          <i class="fa-solid fa-layer-group"></i>
-        </button>
-
-        <div id="menu-overlay">
-          <header>
-
-            <h2>Menu</h2>
-            <button class="close-btn" id="close-btn">&times;</button>
-
-
-          </header>
-
-          <div class="menu-items">
-            <ul>
-              <li><a href="/main webpages/categories/category_main/categories.html"
-                  style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Categories</a></li>
-              <li><a href="/main webpages/book_bundles/1.html"
-                  style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Book Bundles</a></li>
-              <li><a href="/main webpages/upcoming/upcomingbooks.html"
-                  style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Upcoming Books</a></li>
-              <li><a href="/mainpage.html/#dotd" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Deals
-                  of the Day</a></li>
-              <li><a href="#stationary" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Stationary</a>
-              </li>
-            </ul>
+    <!-- nav bar -->
+    <div class="div-container">
+      <div class="logo">
+        <a href="/bookey/mainpage.html"><img src="/bookey/logo.png" /></a> 
+      </div>
+      <div class="nav">
+        <div id="drop-down">
+          <button id="menu-btn">
+            <i class="fa-solid fa-layer-group"></i>
+          </button>
+        
+          <div id="menu-overlay">
+            <header>
+              
+              <h2>Menu</h2>
+              <button class="close-btn" id="close-btn">&times;</button>
+            </header>
+        
+            <div class="menu-items">
+              <ul>
+                <li><a href="/bookey/main webpages/categories/category_main/categories.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Categories</a></li>
+                <li><a href="/bookey/main webpages/book_bundles/1.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Book Bundles</a></li>
+                <li><a href="/bookey/main webpages/upcoming/upcomingbooks.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Upcoming Books</a></li>
+                <li><a href="/bookey/mainpage.html#dotd" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Deals of the Day</a></li>
+                <li><a href="/bookey/mainpage.html#stationary" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Stationary</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-                
-      </div>
-      <div id="search-bar">
-        <input class="input" type="search" placeholder="Search" aria-label="Search" />
-        <button class="button" type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-      <div class="icons">
-        <a href="/wishlist/wishlist.html"><i class="fa-regular fa-heart i-icon"></i></a> <!--wishlist-->
-        <a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping i-icon"></i></a>
-        <a href="/login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
+        </div>
+        <div id="search-bar">
+          <input
+            class="input"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="icons">
+          <a href="/bookey/wishlist/wishlist.html"><i class="fa-regular fa-heart i-icon"></i></a>     
+          <a href="/bookey/cart/cart.html"><i class="fa-solid fa-cart-shopping i-icon"></i></a>
+          <a href="/bookey/login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
+        </div>
       </div>
     </div>
-  </div>
+
+<div id="wrapper" style="flex:1;">
+          <!-- Begin Left Column -->
+          <div id="leftcolumn">
+          <h1>Book Bundles</h1>
+          <!--path-->
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb" style="color: #85450b;">
+              <li class="breadcrumb-item"><a href="/bookey/mainpage.html" style="color: #85450b; text-decoration: none; padding-left: 14px;">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page" style="color: #85450b; padding-left: 14px;">Book Bundles</li>
+            </ol>
+          </nav>
+<!--product categories-->
+          <div class="list-container">
+            <h5>Categories</h5>
+              <ul type="none">
+                <li><a href="/bookey/main webpages/categories/fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Fiction</a></li>
+                <li><a href="/bookey/main webpages/categories/non fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Non Fiction</a></li>
+                <li><a href="/bookey/main webpages/categories/cmt/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Crime, Mystery & Thrillers</a></li>
+                <li><a href="/bookey/main webpages/categories/poetry/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Poetry</a></li>
+                <li><a href="/bookey/main webpages/categories/horror/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Horror</a></li>
+                <li><a href="/bookey/main webpages/categories/young_adult/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Teen Fiction</a></li>
+                <li><a href="/bookey/main webpages/categories/fantasy/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Fantasy</a></li>
+               </ul> 
+             
+          </div>
+
+          <div class="list-container">
+            <h5> Popular Authors</h3>
+
+              <ul type="none">
+                <li>Durjoy Dutta</li>
+                <li>Ravinder Singh </li>
+                <li>Nonna Uppal</li>
+                <li>Amrita Pritam</li>
+                <li>Premchand</li>
+                <li>Prajakta Koli</li>
+                <li>Rebecca Yarros</li>
+               </ul> 
+             
+          </div>
+          <div class="list-container">
+            <h5> Our Topsellers</h3>
+
+              <ul type="none">
+                <li><a href="/bookey/main webpages/book_bundles/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">The Summer I Turned Pretty</a></li>
+                <li><a href="/bookey/main webpages/categories/fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Seven Husbands of Evelyn Hugo</a></li>
+                <li><a href="/bookey/main webpages/categories/fiction/2.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">A Good Girl's Guide to Murder</a></li>
+                <li><a href="/bookey/main webpages/categories/non fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Surrounded By Idiots</a></li>
+                <li><a href="/bookey/main webpages/categories/poetry/3.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">I Have To Tell You Something</a></li>
+                <li><a href="/bookey/main webpages/categories/fantasy/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">The Fantasy League</a></li>
+                <li><a href="/bookey/main webpages/categories/young_adult/3.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">I Am Not Jessica Chen</a></li>
+                  
+               </ul> 
+             
+          </div>
+
+
 
   <div class="banner" style="margin-top: 5%;"></div>
   <div class="main-containercards">
@@ -354,27 +409,30 @@
   </div>
 
 
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('close-btn');
-    const menuOverlay = document.getElementById('menu-overlay');
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menuOverlay = document.getElementById('menu-overlay');
 
 
-    menuBtn.addEventListener('click', () => {
-      menuOverlay.classList.add('active');
+menuBtn.addEventListener('click', () => {
+  menuOverlay.classList.add('active');
 
-    });
+});
 
-    closeBtn.addEventListener('click', () => {
-      menuOverlay.classList.remove('active');
+closeBtn.addEventListener('click', () => {
+  menuOverlay.classList.remove('active');
 
-    });
+});
 
-    backdrop.addEventListener('click', () => {
-      menuOverlay.classList.remove('active');
+backdrop.addEventListener('click', () => {
+  menuOverlay.classList.remove('active');
 
-    });
-  </script>
+});
+</script>
+
+
 </body>
 
 </html>
