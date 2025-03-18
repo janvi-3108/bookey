@@ -302,24 +302,17 @@ body {
 
 /* footer */
 .footer{
+  height: 70px;
+  width: 100%;
   background-color: #85450b;
   color: #deb997;
   display: flex;
-  height: 570px;
-  margin-top: 2%;
- 
-  .text-white{
-    color: #fcfadc;
-    text-decoration: none;
-  }
-  .rounded-circle{
-    background-color: #deb997;
-  }
-
-  
+  position: relative;
+  bottom: 0;
 }
 .container2 {
   height:65px;
+  width: 100%;
   position: relative;
   background-color:#85450b;
   vertical-align: middle;

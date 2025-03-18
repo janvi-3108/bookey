@@ -33,106 +33,118 @@
     </head>
 
     <body>
+
+
+          <!-- nav bar -->
             <div class="div-container">
-                <div class="logo">
-                  <a href="/mainpage.html"><img src="/logo.png" /></a> 
+              <div class="logo">
+                <a href="/bookey/mainpage.html"><img src="/bookey/logo.png" /></a> 
+              </div>
+              <div class="nav">
+                <div id="drop-down">
+                  <button id="menu-btn">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </button>
+                
+                  <div id="menu-overlay">
+                    <header>
+                      <h2>Menu</h2>
+                      <button class="close-btn" id="close-btn">&times;</button>
+                    </header>
+                
+                    <div class="menu-items">
+                      <ul>
+                        <li><a href="/bookey/main webpages/categories/category_main/categories.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Categories</a></li>
+                        <li><a href="/bookey/main webpages/book_bundles/1.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Book Bundles</a></li>
+                        <li><a href="/bookey/main webpages/upcoming/upcomingbooks.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Upcoming Books</a></li>
+                        <li><a href="/bookey/mainpage.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Deals of the Day</a></li>
+                        <li><a href="/bookey/mainpage.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Stationary</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="nav">
-                  <div id="drop-down">
-                    <button>
-                      <i class="fa-solid fa-layer-group" ></i>
-                    </button>
-                  </div>
-                  <div id="search-bar">
-                    <input
-                      class="input"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <button class="button" type="submit">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                  <div class="icons">
-                    
-                    <i class="fa-solid fa-cart-shopping i-icon"></i>
-                    <i class="fa-solid fa-user i-icon"></i>
-                  </div>
+                <div id="search-bar">
+                  <input
+                    class="input"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="button" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+                <div class="icons">
+                  <a href="/bookey/wishlist/wishlist.html"><i class="fa-regular fa-heart i-icon"></i></a>   <!--wishlist-->
+                  <a href="/bookey/cart/cart.html"><i class="fa-solid fa-cart-shopping i-icon"></i></a>
+                  <a href="/bookey/login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
                 </div>
               </div>
             </div>
-            <div id="wrapper">
-          <!-- Begin Left Column -->
-          <div id="leftcolumn">
-          <h1>Categories</h1>
-          <!--path-->
-          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-            <ol class="breadcrumb" style="color: #85450b;">
-              <li class="breadcrumb-item"><a href="/mainpage.html" style="color: #85450b; text-decoration: none; padding-left: 14px;">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page" style="color: #85450b; padding-left: 14px;">Categories</li>
-            </ol>
-          </nav>
-<!--product categories-->
-          <div class="list-container">
-            <h5> Product Categories</h3>
-              <ul type="none">
-                <li></li>
-                <li>Combos & Book Sets</li>
-                <li>Action & Adventure</li>
-                <li>Fiction</li>
-                <li>Non Fiction</li>
-                <li>Crime, Thrillers & Mysteries</li>
-                <li>Poetry</li>
-                <li>Horror</li>
-                <li>Stationary</li>
-                <li>Custom Book Covers</li>
-               </ul> 
-             
-          </div>
-
-          <div class="list-container">
-            <h5> Popular Authors</h3>
-
-              <ul type="none">
-                <li>Durjoy Dutta</li>
-                <li>Ravinder Singh </li>
-                <li>Nonna Uppal</li>
-                <li>Amrita Pritam</li>
-                <li>Premchand</li>
-                <li>Prajakta Koli</li>
-                <li>Rebecca Yarros</li>
-                <li>Colleen Hoover</li>
-                <li>L.J. Shen</li>
-                <li>John Green</li>
-               </ul> 
-             
-          </div>
-          <div class="list-container">
-            <h5> Our Topsellers</h3>
-
-              <ul type="none">
-                <li>Twisted Love</li>
-                <li>The Summer I Turned Pretty</li>
-                <li>The Seven Husbands of Evelyn Hugo</li>
-                <li>Better Than the Movies</li>
-                <li>All This Love</li>
-                <li>Too Good to Be True</li>
-                <li>Fourth Wing</li>
-                <li>Terms And Conditions</li>
-                <li>A Million Kisses In Your Lifetime </li>
-                <li>Wuthering Heights</li>
-               </ul> 
-             
-          </div>
-
-
-
-
-
-          </div>
-          <!-- End Left Column -->
-          <!-- Begin Right Column -->
+        
+                    <div id="wrapper">
+                  <!-- Begin Left Column -->
+                  <div id="leftcolumn">
+                  <h1>Categories</h1>
+                  <!--path-->
+                  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="color: #85450b;">
+                      <li class="breadcrumb-item"><a href="/bookey/mainpage.html" style="color: #85450b; text-decoration: none; padding-left: 14px;">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page" style="color: #85450b; padding-left: 14px;">1</li>
+                    </ol>
+                  </nav>
+        <!--product categories-->
+                  <div class="list-container">
+                    <h5> Popular Categories</h3>
+                      <ul type="none">
+                        <li><a href="/bookey/main webpages/categories/fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Fiction</a></li>
+                        <li><a href="/bookey/main webpages/categories/non fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Non Fiction</a></li>
+                        <li><a href="/bookey/main webpages/categories/cmt/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Crime, Mystery & Thrillers</a></li>
+                        <li><a href="/bookey/main webpages/categories/poetry/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Poetry</a></li>
+                        <li><a href="/bookey/main webpages/categories/horror/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Horror</a></li>
+                        <li><a href="/bookey/main webpages/categories/young_adult/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Teen Fiction</a></li>
+                        <li><a href="/bookey/main webpages/categories/fantasy/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Fantasy</a></li>
+                       </ul> 
+                     
+                  </div>
+        
+                  <div class="list-container">
+                    <h5> Popular Authors</h3>
+        
+                      <ul type="none">
+                        <li>Durjoy Dutta</li>
+                        <li>Ravinder Singh </li>
+                        <li>Nonna Uppal</li>
+                        <li>Amrita Pritam</li>
+                        <li>Premchand</li>
+                        <li>Prajakta Koli</li>
+                        <li>Rebecca Yarros</li>
+                       </ul> 
+                     
+                  </div>
+                  <div class="list-container">
+                    <h5> Our Topsellers</h3>
+        
+                      <ul type="none">
+                        <li><a href="/bookey/main webpages/book_bundles/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">The Summer I Turned Pretty</a></li>
+                        <li><a href="/bookey/main webpages/categories/fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Seven Husbands of Evelyn Hugo</a></li>
+                        <li><a href="/bookey/main webpages/categories/fiction/2.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">A Good Girl's Guide to Murder</a></li>
+                        <li><a href="/bookey/main webpages/categories/non fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Surrounded By Idiots</a></li>
+                        <li><a href="/bookey/main webpages/categories/poetry/3.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">I Have To Tell You Something</a></li>
+                        <li><a href="/bookey/main webpages/categories/fantasy/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">The Fantasy League</a></li>
+                        <li><a href="/bookey/main webpages/categories/young_adult/3.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">I Am Not Jessica Chen</a></li>
+                          
+                       </ul> 
+                     
+                  </div>
+        
+        
+        
+        
+        
+                  </div>
+                  <!-- End Left Column -->
+        <!-- Begin Right Column -->
           <div id="rightcolumn">
             <div class="banner"></div>
             <div class="container-class">
@@ -143,7 +155,7 @@
 
               <div class="title">
                 <h2>Fantasy Books</h2>
-                <a class="titletag" href="/main webpages/categories/fantasy/1.html">View all >></a>
+                <a class="titletag" href="/bookey/main webpages/categories/fantasy/1.html">View all >></a>
               </div>
               <!-- card carousel -->
       <div id="carouselExampleControl" class="carousel carousel-dark slide">
@@ -156,7 +168,7 @@
             >
               <!-- card 1 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/1.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">The Fantasy League by Meg Reading</h5>
                   <p class="card-text-1">&#8377;215</p>
@@ -165,7 +177,7 @@
               </div>
               <!-- card 2 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/2.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/2.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">A Pirate's Life For Tea by Rebecca Thorne</h5>
                   <p class="card-text-1">&#8377;235</p>
@@ -175,7 +187,7 @@
 
               <!-- card 3 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/3.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/3.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     Fantasy of Fire by Kelly St. Clare
@@ -187,7 +199,7 @@
 
               <!-- card 4 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/4.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/4.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Wildest Dreams by Kristen Ashley</h5>
                   <p class="card-text-1">&#8377;313</p>
@@ -206,7 +218,7 @@
             >
               <!-- card 5 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/5.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/5.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                    The Golden Dynasty by Kristen Ashley
@@ -218,7 +230,7 @@
 
               <!-- card 6-->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/6.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/6.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     In The Lord Of Time by Lord Dunsany
@@ -230,7 +242,7 @@
 
               <!-- card 7 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/fantasy/images/7.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/fantasy/images/7.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     A Perfectly Good Fantasy by Lynn Walker
@@ -242,7 +254,7 @@
               <!-- card 8 -->
               <div class="card card-2">
                 <img
-                  src="/main webpages/categories/fantasy/images/8.png"
+                  src="/bookey/main webpages/categories/fantasy/images/8.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -289,7 +301,7 @@
 
               <div class="title">
                 <h2>Non-Fiction Books</h2>
-                <a class="titletag" href="/main webpages/categories/non fiction/1.html">View all >></a>
+                <a class="titletag" href="/bookey/main webpages/categories/non fiction/1.html">View all >></a>
               </div>
               <!-- card carousel -->
       <div id="carouselExampleControl2" class="carousel carousel-dark slide">
@@ -302,7 +314,7 @@
             >
               <!-- card 1 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/1.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Surrounded By Idiots by Thomas Erikson</h5>
                   <p class="card-text-1">&#8377;215</p>
@@ -311,7 +323,7 @@
               </div>
               <!-- card 2 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/2.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/2.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">You're Too Good To Feel This Bad by Nate Dallas</h5>
                   <p class="card-text-1">&#8377;235</p>
@@ -321,7 +333,7 @@
 
               <!-- card 3 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/3.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/3.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     Show Your Work by Austin Kleon
@@ -333,7 +345,7 @@
 
               <!-- card 4 --> 
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/4.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/4.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">The Courage To Be Happy by Ichiro Kishimi</h5>
                   <p class="card-text-1">&#8377;313</p>
@@ -352,7 +364,7 @@
             >
               <!-- card 5 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/5.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/5.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     The 4-Hour Work Week by Timothy Ferriss
@@ -364,7 +376,7 @@
 
               <!-- card 6-->
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/6.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/6.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     Never Finished by David Goggins
@@ -376,7 +388,7 @@
 
               <!-- card 7 -->
               <div class="card card-2">
-                <img src="/main webpages/categories/non fiction/images/7.png" class="card-img-top" alt="..." />
+                <img src="/bookey/main webpages/categories/non fiction/images/7.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">
                     Think And Grow Rich by Napolean Rich
@@ -388,7 +400,7 @@
               <!-- card 8 -->
               <div class="card card-2">
                 <img
-                  src="/main webpages/categories/non fiction/images/8.png"
+                  src="/bookey/main webpages/categories/non fiction/images/8.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -437,7 +449,7 @@
 
       <div class="title">
         <h2>Fiction Books</h2>
-        <a class="titletag" href="/main webpages/categories/fiction/1.html">View all >></a>
+        <a class="titletag" href="/bookey/main webpages/categories/fiction/1.html">View all >></a>
       </div>
       <!-- card carousel -->
 <div id="carouselExampleControl4" class="carousel carousel-dark slide">
@@ -450,7 +462,7 @@
     >
       <!-- card 1 -->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/1.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/1.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Station Eleven by Emily St. John Mandel</h5>
           <p class="card-text-1">&#8377;350</p>
@@ -459,7 +471,7 @@
       </div>
       <!-- card 2 -->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/2.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/2.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">The God of the Woods by Liz Moore</h5>
           <p class="card-text-1">&#8377;400</p>
@@ -469,7 +481,7 @@
 
       <!-- card 3 -->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/3.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/3.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">
             Never Known Men by Jacqueline Harpman
@@ -481,7 +493,7 @@
 
       <!-- card 4 -->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/4.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/4.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Never Let Me Go by Kazuo Ishiguro</h5>
           <p class="card-text-1">&#8377;250</p>
@@ -500,7 +512,7 @@
     >
       <!-- card 5 -->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/5.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/5.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">
             The Silent Patient by Alex Michaelides
@@ -512,7 +524,7 @@
 
       <!-- card 6-->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/6.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/6.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">
             Verity by Colleen <br>Hoover
@@ -524,7 +536,7 @@
 
       <!-- card 7 -->
       <div class="card card-2">
-        <img src="/main webpages/categories/fiction/images/7.png" class="card-img-top" alt="..." />
+        <img src="/bookey/main webpages/categories/fiction/images/7.svg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">
             The Inmate by Freida McFadden
@@ -536,7 +548,7 @@
       <!-- card 8 -->
       <div class="card card-2">
         <img
-          src="/main webpages/categories/fiction/images/8.png"
+          src="/bookey/main webpages/categories/fiction/images/8.svg"
           class="card-img-top"
           alt="..."
         />
@@ -581,7 +593,7 @@
 
   <div class="title">
     <h2>Mythology Books</h2>
-    <a class="titletag" href="/main webpages/categories/mythology/1.html">View all >></a>
+    <a class="titletag" href="/bookey/main webpages/categories/mythology/1.html">View all >></a>
   </div>
   <!-- card carousel -->
 <div id="carouselExampleControl5" class="carousel carousel-dark slide">
@@ -594,7 +606,7 @@
 >
   <!-- card 1 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/1.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/1.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">The Sea of Monsters by Rick Riordan</h5>
       <p class="card-text-1">&#8377;500</p>
@@ -603,7 +615,7 @@
   </div>
   <!-- card 2 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/2.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/2.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Mockingjay by Suzanne Collins</h5>
       <p class="card-text-1">&#8377;450</p>
@@ -613,7 +625,7 @@
 
   <!-- card 3 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/3.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/3.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Insurgent by Veronica Roth
@@ -625,7 +637,7 @@
 
   <!-- card 4 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/4.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/4.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">The Maze Runner by James Dashner</h5>
       <p class="card-text-1">&#8377;550</p>
@@ -644,7 +656,7 @@
 >
   <!-- card 5 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/5.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/5.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         The Lost Hero by Rick Riordan
@@ -656,7 +668,7 @@
 
   <!-- card 6-->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/6.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/6.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Catching Fire by Suzanne Collins
@@ -668,7 +680,7 @@
 
   <!-- card 7 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/mythology/images/7.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/mythology/images/7.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         New Moon by Stephenie Meyer
@@ -680,7 +692,7 @@
   <!-- card 8 -->
   <div class="card card-2">
     <img
-      src="/main webpages/categories/mythology/images/8.png"
+      src="/bookey/main webpages/categories/mythology/images/8.png"
       class="card-img-top"
       alt="..."
     />
@@ -725,7 +737,7 @@ data-bs-slide="next"
 
   <div class="title">
     <h2>Teen Fiction Books</h2>
-    <a class="titletag" href="/main webpages/categories/young_adult/1.html">View all >></a>
+    <a class="titletag" href="/bookey/main webpages/categories/young_adult/1.html">View all >></a>
   </div>
   <!-- card carousel -->
 <div id="carouselExampleControl6" class="carousel carousel-dark slide">
@@ -738,7 +750,7 @@ data-bs-slide="next"
 >
   <!-- card 1 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/1.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/1.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Sometimes It Happens by Lauren Barnholdt
       </h5>
@@ -748,7 +760,7 @@ data-bs-slide="next"
   </div>
   <!-- card 2 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/2.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/2.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Goodbye, Perfect by Sara Barnard</h5>
       <p class="card-text-1">&#8377;600</p>
@@ -758,7 +770,7 @@ data-bs-slide="next"
 
   <!-- card 3 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/3.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/3.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Sometimes We Tell the Truth by Kim Zarins
@@ -771,7 +783,7 @@ data-bs-slide="next"
 
   <!-- card 4 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/4.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/4.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Because You'll Never Meet by Leah Thomas</h5>
       <p class="card-text-1">&#8377;650</p>
@@ -790,7 +802,7 @@ data-bs-slide="next"
 >
   <!-- card 5 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/5.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/5.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         One Man Guy by Michael Barakiva
@@ -803,7 +815,7 @@ data-bs-slide="next"
 
   <!-- card 6-->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/6.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/6.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         I Got You by Nicole <br>Mac
@@ -815,7 +827,7 @@ data-bs-slide="next"
 
   <!-- card 7 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/young_adult/images/7.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/young_adult/images/7.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Perfection by Isabella <br>Emma
@@ -827,7 +839,7 @@ data-bs-slide="next"
   <!-- card 8 -->
   <div class="card card-2">
     <img
-      src="/main webpages/categories/young_adult/images/8.png"
+      src="/bookey/main webpages/categories/young_adult/images/8.png"
       class="card-img-top"
       alt="..."
     />
@@ -872,7 +884,7 @@ data-bs-slide="next"
 
   <div class="title">
     <h2>Crime, Mystery & Thriller Books</h2>
-    <a class="titletag" href="/main webpages/categories/cmt/1.html">View all >></a>
+    <a class="titletag" href="/bookey/main webpages/categories/cmt/1.html">View all >></a>
   </div>
   <!-- card carousel -->
 <div id="carouselExampleControl7" class="carousel carousel-dark slide">
@@ -885,7 +897,7 @@ data-bs-slide="next"
 >
   <!-- card 1 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/1.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/1.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">And Then There Were None by Agatha Christie
       </h5>
@@ -895,7 +907,7 @@ data-bs-slide="next"
   </div>
   <!-- card 2 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/2.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/2.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Gone Girl by Gillian <br>Flynn</h5>
       <p class="card-text-1">&#8377;500</p>
@@ -905,7 +917,7 @@ data-bs-slide="next"
 
   <!-- card 3 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/3.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/3.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Lovely Bones by Alice Sebold
@@ -918,7 +930,7 @@ data-bs-slide="next"
 
   <!-- card 4 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/4.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/4.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Mystic River by Dennis Lehane</h5>
       <p class="card-text-1">&#8377;550</p>
@@ -937,7 +949,7 @@ data-bs-slide="next"
 >
   <!-- card 5 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/5.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/5.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Before I Go To Sleep by S.J. Watson
@@ -950,7 +962,7 @@ data-bs-slide="next"
 
   <!-- card 6-->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/6.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/6.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         The Elephant Tree by R.D. Ronald
@@ -962,7 +974,7 @@ data-bs-slide="next"
 
   <!-- card 7 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/cmt/images/7.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/cmt/images/7.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         A Story of Yesterday by Sergio Cobo
@@ -974,7 +986,7 @@ data-bs-slide="next"
   <!-- card 8 -->
   <div class="card card-2">
     <img
-      src="/main webpages/categories/cmt/images/8.png"
+      src="/bookey/main webpages/categories/cmt/images/8.png"
       class="card-img-top"
       alt="..."
     />
@@ -1019,7 +1031,7 @@ data-bs-slide="next"
 
   <div class="title">
     <h2>Horror Books</h2>
-    <a class="titletag" href="/main webpages/categories/horror/1.html">View all >></a>
+    <a class="titletag" href="/bookey/main webpages/categories/horror/1.html">View all >></a>
   </div>
   <!-- card carousel -->
 <div id="carouselExampleControl8" class="carousel carousel-dark slide">
@@ -1032,7 +1044,7 @@ data-bs-slide="next"
 >
   <!-- card 1 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/1.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/1.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">IT by Stephen <br>King</h5>
       <p class="card-text-1">&#8377;350</p>
@@ -1041,7 +1053,7 @@ data-bs-slide="next"
   </div>
   <!-- card 2 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/2.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/2.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Dracula by Bram <br>Stoker</h5>
       <p class="card-text-1">&#8377;400</p>
@@ -1051,7 +1063,7 @@ data-bs-slide="next"
 
   <!-- card 3 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/3.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/3.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         The Only Good Indians by Stephen Jones
@@ -1063,7 +1075,7 @@ data-bs-slide="next"
 
   <!-- card 4 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/4.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/4.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Heart-Shaped Box by Joe Hill</h5>
       <p class="card-text-1">&#8377;250</p>
@@ -1082,7 +1094,7 @@ data-bs-slide="next"
 >
   <!-- card 5 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/5.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/5.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         The Troop by Nick <br>Cutter
@@ -1094,7 +1106,7 @@ data-bs-slide="next"
 
   <!-- card 6-->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/6.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/6.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         How To Sell A Haunted House by Grady Hendrix
@@ -1106,7 +1118,7 @@ data-bs-slide="next"
 
   <!-- card 7 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/horror/images/7.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/horror/images/7.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
          The Institute by Stephen <br> King
@@ -1118,7 +1130,7 @@ data-bs-slide="next"
   <!-- card 8 -->
   <div class="card card-2">
     <img
-      src="/main webpages/categories/horror/images/8.png"
+      src="/bookey/main webpages/categories/horror/images/8.png"
       class="card-img-top"
       alt="..."
     />
@@ -1165,7 +1177,7 @@ data-bs-slide="next"
 
   <div class="title">
     <h2>Poetry Books</h2>
-    <a class="titletag" href="/main webpages/categories/poetry/1.html">View all >></a>
+    <a class="titletag" href="/bookey/main webpages/categories/poetry/1.html">View all >></a>
   </div>
   <!-- card carousel -->
 <div id="carouselExampleControl10" class="carousel carousel-dark slide">
@@ -1178,7 +1190,7 @@ data-bs-slide="next"
 >
   <!-- card 1 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/1.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/1.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Love Her Wild by <br>Atticus </h5>
       <p class="card-text-1">&#8377;350</p>
@@ -1187,7 +1199,7 @@ data-bs-slide="next"
   </div>
   <!-- card 2 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/2.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/2.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">LVOE by <br>Atticus</h5>
       <p class="card-text-1">&#8377;400</p>
@@ -1197,7 +1209,7 @@ data-bs-slide="next"
 
   <!-- card 3 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/3.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/3.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         Helium by Rudy <br>Francisco
@@ -1209,7 +1221,7 @@ data-bs-slide="next"
 
   <!-- card 4 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/4.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/4.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">If My Body Could Speak by Blythe Baird</h5>
       <p class="card-text-1">&#8377;250</p>
@@ -1228,7 +1240,7 @@ data-bs-slide="next"
 >
   <!-- card 5 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/5.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/5.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
         The Hatred Of Poetry by Ben Lerner
@@ -1240,7 +1252,7 @@ data-bs-slide="next"
 
   <!-- card 6-->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/6.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/6.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
        Poetry Of Flowers by Emmy Adamea
@@ -1252,7 +1264,7 @@ data-bs-slide="next"
 
   <!-- card 7 -->
   <div class="card card-2">
-    <img src="/main webpages/categories/poetry/images/7.png" class="card-img-top" alt="..." />
+    <img src="/bookey/main webpages/categories/poetry/images/7.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">
          I Saw You As A Flower by Ellen Everett
@@ -1264,7 +1276,7 @@ data-bs-slide="next"
   <!-- card 8 -->
   <div class="card card-2">
     <img
-      src="/main webpages/categories/poetry/images/8.png"
+      src="/bookey/main webpages/categories/poetry/images/8.png"
       class="card-img-top"
       alt="..."
     />
@@ -1317,223 +1329,7 @@ data-bs-slide="next"
 
         
         <!--footer-->
-    <footer class="footer">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row my-4">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-  
-            <div class="rounded-circle shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 200px;">
-              <img src="/images/logo-footer.png" height="100" alt=""
-                   loading="lazy" style="z-index: -0;"/>
-            </div>
-  
-            <p class="text-center">Bookey | BookStore</p>
-  
-            <ul class="list-unstyled d-flex flex-row justify-content-center">
-              <li>
-                <a class="text-white px-2" href="#!">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-white px-2" href="#!">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-white ps-2" href="#!">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-            </ul>
-  
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Popular Series</h5>
-  
-            <ul class="list-unstyled list">
-              <li class="mb-2">
-                <a href="#!" class="text-white"> Rober Greene Combo</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">The Made Series</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!"class="text-white" >Summer I Turned Pretty Trilogy</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!"class="text-white" >Shadow and Bone Trilogy</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Percy Jackson Series</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!"class="text-white" >Harry Potter Box Set</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Popular Categories</h5>
-  
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white">Fiction</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Combos & Box Sets</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Non-Fiction</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Biographies & Memories</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Contemporary Fiction</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Hindi Novels</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column--><!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Our Best Sellers</h5>
-  
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white">Atomin Habits</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">It Ends With Us</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Do Epic Shit</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">The Song of Archillies</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">The 48 Laws Of Power</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Intelligent Investor</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4"><br><br>Contact</h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
-              </li>
-              <li>
-                <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
-              </li>
-              <li>
-                <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: -30px;">
-            <h5 class="text-uppercase mb-4">Popular Authors</h5>
-  
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white">Robin Sharma</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Colleen Hoover</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Vex King</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">James Clear</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Chetan Bhagat</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Robert Greene</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0"  style="margin-top: -30px;">
-            <h5 class="text-uppercase mb-4">Our Best Sellers</h5>
-  
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white">Atomin Habits</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">It Ends With Us</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Do Epic Shit</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">The Song of Archillies</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">The 48 Laws Of Power</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Intelligent Investor</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0"  style="margin-top: -30px;">
-            <h5 class="text-uppercase mb-4">Popular Series</h5>
-  
-            <ul class="list-unstyled list">
-              <li class="mb-2">
-                <a href="#!" class="text-white"> Rober Greene Combo</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">The Made Series</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!"class="text-white" >Summer I Turned Pretty Trilogy</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!"class="text-white" >Shadow and Bone Trilogy</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white">Percy Jackson Series</a>
-              </li>
-              <li class="mb-2">
-                <a href="#!"class="text-white" >Harry Potter Box Set</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-  
-    </footer>
+    <footer>
       <div class="container2">
         <div class="col-lg-12 foot">
           <p><br>Copyright © 2036 <i>bookeybookstore</i></p>
@@ -1543,5 +1339,29 @@ data-bs-slide="next"
     </footer>
    <!---- end-->  
 
+
+
+
+   <script>
+    const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menuOverlay = document.getElementById('menu-overlay');
+
+
+menuBtn.addEventListener('click', () => {
+  menuOverlay.classList.add('active');
+
+});
+
+closeBtn.addEventListener('click', () => {
+  menuOverlay.classList.remove('active');
+
+});
+
+backdrop.addEventListener('click', () => {
+  menuOverlay.classList.remove('active');
+
+});
+</script>
         </body>
         </html>

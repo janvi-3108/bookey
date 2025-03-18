@@ -252,18 +252,41 @@ body {
 }
 .wishlist-button {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 20px;
+  height: 30px;
   width:30px;
-  border-bottom-left-radius:5px ;
+  border-radius:50%;
   background-color: white;
   border: none;
   color: red;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
   z-index: 1;
 }
 
 .wishlist-button:hover {
   color: red;
+}
+.footer{
+  height: 70px;
+  width: 100%;
+  background-color: #85450b;
+  color: #deb997;
+  display: flex;
+  position: relative;
+  bottom: 0;
+}
+.container2 {
+  height:65px;
+  width: 100%;
+  position: relative;
+  background-color:#85450b;
+  vertical-align: middle;
+}
+.container2 p {
+  text-align: center;
+  line-height:10px;
+  color:#fcfadc;
+  font-weight: 400;
 }

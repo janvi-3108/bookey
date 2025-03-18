@@ -485,5 +485,26 @@ margin-top: -10%;
   height: 100%;
   width: 80%;
 }
-
-
+/* footer */
+.footer{
+  height: 70px;
+  width: 100%;
+  background-color: #85450b;
+  color: #deb997;
+  display: flex;
+  position: relative;
+  bottom: 0;
+}
+.container2 {
+  height:65px;
+  width: 100%;
+  position: relative;
+  background-color:#85450b;
+  vertical-align: middle;
+}
+.container2 p {
+  text-align: center;
+  line-height:10px;
+  color:#fcfadc;
+  font-weight: 400;
+}

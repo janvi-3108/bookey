@@ -36,27 +36,6 @@
 
 <body>
 
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-const closeBtn = document.getElementById('close-btn');
-const menuOverlay = document.getElementById('menu-overlay');
-
-
-menuBtn.addEventListener('click', () => {
-  menuOverlay.classList.add('active');
-
-});
-
-closeBtn.addEventListener('click', () => {
-  menuOverlay.classList.remove('active');
-
-});
-
-backdrop.addEventListener('click', () => {
-  menuOverlay.classList.remove('active');
-
-});
-</script>
     
     
     <!-- nav bar -->
@@ -395,6 +374,29 @@ backdrop.addEventListener('click', () => {
       </div>
     </div>
 </footer> 
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menuOverlay = document.getElementById('menu-overlay');
+
+
+menuBtn.addEventListener('click', () => {
+menuOverlay.classList.add('active');
+
+});
+
+closeBtn.addEventListener('click', () => {
+menuOverlay.classList.remove('active');
+
+});
+
+backdrop.addEventListener('click', () => {
+menuOverlay.classList.remove('active');
+
+});
+</script>
 
 </body>
 
