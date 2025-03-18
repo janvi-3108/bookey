@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book Bundles</title>
+        <link rel="stylesheet" href="bookbundles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz4fnFO9gyb6g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-...your integrity hash..."
+            crossorigin="anonymous"></script>
+
+            
+    </head>
+    
+    <body>
+     
+<div class="page">
+    <!-- nav bar -->
+    <div class="div-container">
+      <div class="logo">
+        <a href="/bookey/mainpage.html"><img src="/bookey/logo.png" /></a> 
+      </div>
+      <div class="nav">
+        <div id="drop-down">
+          <button id="menu-btn">
+            <i class="fa-solid fa-layer-group"></i>
+          </button>
+        
+          <div id="menu-overlay">
+            <header>
+              
+              <h2>Menu</h2>
+              <button class="close-btn" id="close-btn">&times;</button>
+            </header>
+        
+            <div class="menu-items">
+              <ul>
+                <li><a href="/bookey/main webpages/categories/category_main/categories.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Categories</a></li>
+                <li><a href="/bookey/main webpages/book_bundles/1.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Book Bundles</a></li>
+                <li><a href="/bookey/main webpages/upcoming/upcomingbooks.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Upcoming Books</a></li>
+                <li><a href="/bookey/mainpage.html#dotd" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Deals of the Day</a></li>
+                <li><a href="/bookey/mainpage.html#stationary" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Stationary</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div id="search-bar">
+          <input
+            class="input"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="icons">
+          <a href="/bookey/wishlist/wishlist.html"><i class="fa-regular fa-heart i-icon"></i></a>     
+          <a href="/bookey/cart/cart.html"><i class="fa-solid fa-cart-shopping i-icon"></i></a>
+          <a href="/bookey/login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+<div id="wrapper" style="flex:1;">
+          <!-- Begin Left Column -->
+          <div id="leftcolumn">
+          <h1>Book Bundles</h1>
+          <!--path-->
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb" style="color: #85450b;">
+              <li class="breadcrumb-item"><a href="/bookey/mainpage.html" style="color: #85450b; text-decoration: none; padding-left: 14px;">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page" style="color: #85450b; padding-left: 14px;">Book Bundles</li>
+            </ol>
+          </nav>
+<!--product categories-->
+          <div class="list-container">
+            <h5>Categories</h5>
+              <ul type="none">
+                <li><a href="/bookey/main webpages/categories/fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Fiction</a></li>
+                <li><a href="/bookey/main webpages/categories/non fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Non Fiction</a></li>
+                <li><a href="/bookey/main webpages/categories/cmt/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Crime, Mystery & Thrillers</a></li>
+                <li><a href="/bookey/main webpages/categories/poetry/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Poetry</a></li>
+                <li><a href="/bookey/main webpages/categories/horror/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Horror</a></li>
+                <li><a href="/bookey/main webpages/categories/young_adult/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Teen Fiction</a></li>
+                <li><a href="/bookey/main webpages/categories/fantasy/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Fantasy</a></li>
+               </ul> 
+             
+          </div>
+
+          <div class="list-container">
+            <h5> Popular Authors</h3>
+
+              <ul type="none">
+                <li>Durjoy Dutta</li>
+                <li>Ravinder Singh </li>
+                <li>Nonna Uppal</li>
+                <li>Amrita Pritam</li>
+                <li>Premchand</li>
+                <li>Prajakta Koli</li>
+                <li>Rebecca Yarros</li>
+               </ul> 
+             
+          </div>
+          <div class="list-container">
+            <h5> Our Topsellers</h3>
+
+              <ul type="none">
+                <li><a href="/bookey/main webpages/book_bundles/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">The Summer I Turned Pretty</a></li>
+                <li><a href="/bookey/main webpages/categories/fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Seven Husbands of Evelyn Hugo</a></li>
+                <li><a href="/bookey/main webpages/categories/fiction/2.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">A Good Girl's Guide to Murder</a></li>
+                <li><a href="/bookey/main webpages/categories/non fiction/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">Surrounded By Idiots</a></li>
+                <li><a href="/bookey/main webpages/categories/poetry/3.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">I Have To Tell You Something</a></li>
+                <li><a href="/bookey/main webpages/categories/fantasy/1.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">The Fantasy League</a></li>
+                <li><a href="/bookey/main webpages/categories/young_adult/3.html" style="text-decoration: none; color: #85450b; font-size: 1rem;">I Am Not Jessica Chen</a></li>
+                  
+               </ul> 
+             
+          </div>
+
+
+
+
+
+          </div>
+          <!-- End Left Column -->
+          <!-- Begin Right Column -->
+          <div id="rightcolumn">
+            <div class="banner"></div>
+            <div class="container-class">
+
+              <!--row1-->
+            <div class="row1">
+            <!--card1-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: A Court of Thorns and Roses</h5>
+                <p class="card-text">Sarah J. Maas</p>
+                <p class="card-text-1">&#8377;699</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Do Epic Shit & Get Epic Shit Done</h5>
+                <p class="card-text">Ankur Warikoo</p>
+                <p class="card-text-1">&#8377;349</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Percy Jackson Series</h5>
+                <p class="card-text">Rick Riordan</p>
+                <p class="card-text-1">&#8377;899</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card4-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo by Christina Lauren</h5>
+                <p class="card-text">Christina Lauren</p>
+                <p class="card-text-1">&#8377;369</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <!--row end-->
+
+          <!--row2-->
+          <div class="row1">
+            <!--card1-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main%20webpages/book_bundles/images/5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Winning Attitude Series</h5>
+                <p class="card-text">Mark Douglas</p>
+                <p class="card-text-1">&#8377;309</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main%20webpages/book_bundles/images/6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo by Casey McQuiston</h5>
+                <p class="card-text">Casey McQuiston</p>
+                <p class="card-text-1">&#8377;389</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo by Chitra Banerjee Divakaruni</h5>
+                <p class="card-text">Chitra Banerjee Divakaruni</p>
+                <p class="card-text-1">&#8377;549</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card4-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: The Made Series By Danielle Lori</h5>
+                <p class="card-text">Danielle Lori</p>
+                <p class="card-text-1">&#8377;789</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <!--row end-->
+
+          <!--row3-->
+          <div class="row1">
+            <!--card1-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: It Ends with Us Series</h5>
+                <p class="card-text">Colleen Hoover</p>
+                <p class="card-text-1">&#8377;559</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: The Twisted Series</h5>
+                <p class="card-text">Ana Huang</p>
+                <p class="card-text-1">&#8377;849</p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/11.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: The Dirty Air Series</h5>
+                <p class="card-text">Lauren Asher</p>
+                <p class="card-text-1">&#8377;779</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card4-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Dreamland Billionaires Series</h5>
+                <p class="card-text">Lauren Asher</p>
+                <p class="card-text-1">&#8377;674</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+          </div><!--row end-->
+
+          <!--row4-->
+          <div class="row1">
+            <!--card1-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/13.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Cat And Mouse Duet</h5>
+                <p class="card-text">H.D. Carlton</p>
+                <p class="card-text-1">&#8377;629</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/14.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Harry Potter BoxSet</h5>
+                <p class="card-text">J.K. Rowling</p>
+                <p class="card-text-1">&#8377;1349</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/15.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo by Madeline Miller</h5>
+                <p class="card-text">Madeline Miller</p>
+                <p class="card-text-1">&#8377;349</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card4-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main%20webpages/book_bundles/images/16.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: The Shadow And Bone Trilogy</h5>
+                <p class="card-text">Leigh Bardugo</p>
+                <p class="card-text-1">&#8377;755</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <!--row end-->
+
+          <!--row4-->
+          <div class="row1">
+            <!--card1-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main%20webpages/book_bundles/images/17.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: The Robert Green Series</h5>
+                <p class="card-text">Robert Greene</p>
+                <p class="card-text-1">&#8377;749</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card2-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/18.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo By David Goggins</h5>
+                <p class="card-text">David Goggins</p>
+                <p class="card-text-1">&#8377;379</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card3-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/19.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo By Sally <br>Rooney</h5>
+                <p class="card-text">Sally Roooney</p>
+                <p class="card-text-1">&#8377;349</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <!--card4-->
+            <div class="card card-2" >
+              <button class="wishlist-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="/bookey/main webpages/book_bundles/images/20.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo: Summer I Turned Pretty Trilogy</h5>
+                <p class="card-text">Jenny Han</p>
+                <p class="card-text-1">&#8377;849</p>
+                <a href="/bookey/cart/cart.html" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <!--row end-->
+
+
+
+          
+          </div>
+          <!--container class-->
+          </div>
+          <!-- End Right Column -->
+         </div>
+        <!-- End Wrapper -->  
+       
+         
+
+        </div>
+<footer>
+        <div class="container2">
+          <div class="col-lg-12 foot">
+            <p><br>Copyright© 2025 <i>bookeybookstore</i></p>
+            <p><b>All rights reserved</b></p>
+          </div>
+        </div>
+</footer>  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wishlistButtons = document.querySelectorAll('.wishlist-button');
+    wishlistButtons.forEach(button => {
+        button.addEventListener('click', addToWishlist);
+    });
+});
+
+function addToWishlist(event) {
+    const button = event.currentTarget; // Use event.currentTarget to get the button element
+    const icon = button.querySelector('i');
+    button.classList.toggle('added');
+    if (button.classList.contains('added')) {
+        icon.classList.remove('fa-regular');
+        icon.classList.add('fa-solid');
+        
+    } else {
+        icon.classList.remove('fa-solid');
+        icon.classList.add('fa-regular');
+       
+    }
+}
+</script>
+
+   <script>
+    const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menuOverlay = document.getElementById('menu-overlay');
+
+
+menuBtn.addEventListener('click', () => {
+  menuOverlay.classList.add('active');
+
+});
+
+closeBtn.addEventListener('click', () => {
+  menuOverlay.classList.remove('active');
+
+});
+
+backdrop.addEventListener('click', () => {
+  menuOverlay.classList.remove('active');
+
+});
+</script>
+
+</body>
+</html>

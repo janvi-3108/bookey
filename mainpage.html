@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gyb6g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-...your integrity hash..."
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <div class="div-container">
+      <div class="logo">
+        <a href="mainpage.html"><img src="logo.png" /></a> 
+      </div>
+      <div class="nav">
+        <div id="drop-down">
+          <button id="menu-btn">
+            <i class="fa-solid fa-layer-group"></i>
+          </button>
+        
+          <div id="menu-overlay">
+            <header>
+              
+              <h2>Menu</h2>
+              <button class="close-btn" id="close-btn">&times;</button>
+ 
+              
+            </header>
+        
+            <div class="menu-items">
+              <ul>
+                <li><a href="main webpages/categories/category_main/categories.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Categories</a></li>
+                <li><a href="main webpages/book_bundles/1.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Book Bundles</a></li>
+                <li><a href="main webpages/upcoming/upcomingbooks.html" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Upcoming Books</a></li>
+                <li><a href="mainpage.html#dotd" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Deals of the Day</a></li>
+                <li><a href="mainpage.html#stationary" style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Stationary</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div id="search-bar">
+          <input
+            class="input"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="icons">
+          <a href="wishlist/wishlist.html"><i class="fa-regular fa-heart i-icon"></i></a>   <!--wishlist-->
+          <a href="cart/cart.html"><i class="fa-solid fa-cart-shopping i-icon"></i></a>
+          <a href="login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#new_releases"><img src="images/1.png" class="d-block w-100" alt="..." /> </a>
+          </div>
+          <div class="carousel-item">
+            <img src="images/2.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/4.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- free shipping -->
+    <div class="fs">
+      <div class="moving-text">
+        <p>Free Shipping on all orders above &#8377;500</p>
+      </div>
+    </div>
+
+    <!-- main divs -->
+    <div class="heading-h1">
+      <h1>BROWSE BY:</h1>
+    </div>
+
+    <div class="bgdiv">
+      <div class="container">
+        <div class="work-list">
+          <div class="work">
+            <img src="images/d1.png" />
+            <div class="layer">
+              <h3>MORE FOR LESS!</h3>
+
+              <a href="main webpages/book_bundles/1.html">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/d2.png" />
+            <div class="layer">
+              <h3>संवाद की आदत डालें!</h3>
+
+              <a href="main webpages/hindi/1.html">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/d3.png" />
+            <div class="layer">
+              <h3>Your Personal Heaven!</h3>
+
+              <a href="/main webpages/categories/category_main/categories.html">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/d4.png" />
+            <div class="layer">
+              <h3>
+                What's The <br>Gossip? 
+              </h3>
+              <a href="/main webpages/tott/1.html">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgdiv2">
+      <div class="container">
+        <div class="work-list">
+          <div class="work">
+            <img src="images/d5.png" />
+            <div class="layer">
+              <h3>Behold The Unseen!</h3>
+
+              <a href=" main webpages/upcoming/upcomingbooks.html">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/d6.png" />
+            <div class="layer">
+              <h3>Better Late Than Never!</h3>
+
+              <a href="#dotd">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/d7.png" />
+            <div class="layer">
+              <h3>Designed Just For You!</h3>
+
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/d8.png" />
+            <div class="layer">
+              <h3>Scribble Your Story!</h3>
+
+              <a href="#stationary">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="margin: 50px; margin-bottom: 20px" />
+
+    <!--NEW RELEASES-->
+    <div class="dotd" id="new_releases">
+      <div class="dotdbanner">
+        <h1 style="margin-top: -25px">NEW RELEASES</h1>
+      </div>
+
+      <!-- card carousel -->
+      <div id="carouselExampleControl" class="carousel carousel-dark slide">
+        <!-- data-bs-ride="carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px; gap: 20px"
+            >
+              <!-- card 1 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">The Last Lecture by Randy Pausch</h5>
+                  <p class="card-text-1">&#8377;328</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">The 4 Hour Body by Timothy Ferriss</h5>
+                  <p class="card-text-1">&#8377;387</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 11 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Be Water My Friend by Shannon Lee</h5>
+                  <p class="card-text-1">&#8377;279</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">11 Rules for Life by Chetan Bhagat</h5>
+                  <p class="card-text-1">&#8377;313</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 5 -->
+
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    A Gentle Reminder by Bianca Sparacino
+                  </h5>
+                  <p class="card-text-1">&#8377;213</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+               <!-- card 12 -->
+               <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Wings of Fire by APJ Abdul Kalam</h5>
+                  <p class="card-text-1">&#8377;299</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px"
+            >
+              <!-- card 7 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    A Thousand Boy Kisses by Tillie Cole
+                  </h5>
+                  <p class="card-text-1">&#8377;118</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 8 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    A Touch Of Eternity by Durjoy Dutta
+                  </h5>
+                  <p class="card-text-1">&#8377;345</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 9 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    All Your Perfects by Colleen Hoover
+                  </h5>
+                  <p class="card-text-1">&#8377;399</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img
+                  src="new releases/10.jpg
+                "
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Behind the Net by Stephanie Archer</h5>
+                  <p class="card-text-1">&#8377;149</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+
+              <!-- card 3 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Stillness is the Key by Ryan Holiday
+                  </h5>
+                  <p class="card-text-1">&#8377;213</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+
+              <!-- card 6 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="new releases/6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    A Curse For True Love by Stephanie Garber
+                  </h5>
+                  <p class="card-text-1">&#8377;332</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <button
+            class="carousel-control-prev button-set"
+            type="button"
+            data-bs-target="#carouselExampleControl"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next button-set"
+            type="button"
+            data-bs-target="#carouselExampleControl"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--best selling /main webpages/categories/non fiction/images/1.png books -->
+    <div class="dotd">
+      <div class="dotdbanner">
+        <h1 style="margin-top: -25px">BESTSELLING NON FICTION BOOKS</h1>
+      </div>
+
+      <!-- card carousel -->
+      <div id="carouselExampleControls" class="carousel carousel-dark slide">
+        <!-- data-bs-ride="carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px"
+            >
+              <!-- card 1 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              
+                <img src="main webpages/categories/non fiction/images/1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Surrounded By Idiots by Thomas Erikson
+                  </h5>
+                  <p class="card-text-1">&#8377;215</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    You're Too Good To Feel This Bad by Nate Dallas
+                  </h5>
+                  <p class="card-text-1">&#8377;235</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 8 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Compound Effect by Darren Hardy
+                  </h5>
+                  <p class="card-text-1">&#8377;345</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              
+
+              <!-- card 4 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Courage To Be Happy by Ichiro Kishimi
+                  </h5>
+                  <p class="card-text-1">&#8377;188</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 5 -->
+
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The 4-Hour Work Week by Timothy Ferriss
+                  </h5>
+                  <p class="card-text-1">&#8377;169</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 6 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Never Finished by David Goggins</h5>
+                  <p class="card-text-1">&#8377;332</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px"
+            >
+              <!-- card 7 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Think And Grow Rich by Napolean Rich
+                  </h5>
+                  <p class="card-text-1">&#8377;342</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Show Your Work by Austin Kleon</h5>
+                  <p class="card-text-1">&#8377;213</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              
+              <!-- card 9 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/9.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Never Split The Difference by Chris Voss
+                  </h5>
+                  <p class="card-text-1">&#8377;285</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/10.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Thinking Fast and Slow by Daniel Kahneman
+                  </h5>
+                  <p class="card-text-1">&#8377;299</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 11 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/11.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sapiens by Yuval Noah Harari</h5>
+                  <p class="card-text-1">&#8377;299</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 12 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="main webpages/categories/non fiction/images/12.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Ikigai Journey by Heactor Garcia
+                  </h5>
+                  <p class="card-text-1">&#8377;299</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <button
+            class="carousel-control-prev button-set"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next button-set"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin: 50px" />
+    <!--ticket banner-->
+    <div class="ticket-banner"></div>
+    <hr style="margin: 50px; margin-bottom: 20px" />
+
+    <!-- deals of the day -->
+    <div class="dotd" id="dotd" style="height: 490px">
+      <div class="dotdbanner">
+        <h1
+          style="
+            text-align: center;
+            margin-top: -5px;
+            font-size: 45px;
+            background-color: #85450b;
+            color: #fcfadc;
+            margin-left: 0%;
+          "
+        >
+          DEAL OF THE DAY
+        </h1>
+      </div>
+
+      <!-- card carousel -->
+      <div id="carouselExampleControl-s" class="carousel carousel-dark slide">
+        <!-- data-bs-ride="carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px; margin-top: 4%; margin-bottom: 1%; "
+            >
+              <!-- card 1 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Terms And Conditions by Lauren Asher
+                  </h5>
+                  <p class="card-text-1">&#8377;216</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Crime & Punishment by Fyodor Dostoevsky
+                  </h5>
+                  <p class="card-text-1">&#8377;376</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Haunting Adeline by H.D. Carlton</h5>
+                  <p class="card-text-1">&#8377;285</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Fourth Wing by Rebecca Yarros</h5>
+                  <p class="card-text-1">&#8377;299</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 5 -->
+
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Song of Achilles by Madeline Miller
+                  </h5>
+                  <p class="card-text-1">&#8377;362</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              
+              <!-- card 11 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Beautiful World, Where Are You by Sally Rooney
+                  </h5>
+                  <p class="card-text-1">&#8377;243</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px; margin-top: 4%; margin-bottom: 1%"
+            >
+              <!-- card 7 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Silent Patient by Alex Michaelides
+                  </h5>
+                  <p class="card-text-1">&#8377;195</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 8 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Atomic Habits by James Clear</h5>
+                  <p class="card-text-1">&#8377;358</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 9 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Get Epic Shit Done by Ankur Warikoo
+                  </h5>
+                  <p class="card-text-1">&#8377;199</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Wings of Fire by APJ Abdul Kalam</h5>
+                  <p class="card-text-1">&#8377;320</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 6 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Twisted Lies by Ana Huang</h5>
+                  <p class="card-text-1">&#8377;346</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 12 -->
+              <div class="card">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="dotd/c12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    The Summer Of Broken Rules by K.L. Walther
+                  </h5>
+                  <p class="card-text-1">&#8377;323</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <button
+            class="carousel-control-prev button-set"
+            type="button"
+            data-bs-target="#carouselExampleControl-s"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next button-set"
+            type="button"
+            data-bs-target="#carouselExampleControl-s "
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>  
+    <div class="timer">
+      <span class="time-remaining-text">Time Remaining:</span>
+      <h2 id="timer-text">00:00:00</h2>
+    </div>
+
+    <!-- CAROUSEL END -->
+
+    <hr style="margin: 50px" />
+
+    <!-- book of the month-->
+    <div class="main-container">
+      <div
+        class="card-div"
+        style="
+          width: 35rem;
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          height: 75%;
+        "
+      >
+        <img
+          src="images/Untitled design.png"
+          class="card-img-top"
+          alt="..."
+          style="height: 100%"
+        />
+      </div>
+
+      <div class="content"></div>
+    </div>
+
+    <hr style="margin: 50px; margin-bottom: 5px" />
+
+    <!-- Carousel Start -->
+    <div class="dotd" id="stationary" style="height: 490px">
+      <div class="dotdbanner">
+        <h1
+          style="
+            text-align: center;
+            margin-top: -5px;
+            font-size: 45px;
+            background-color: #85450b;
+            color: #fcfadc;
+            margin-left: 0%;
+          "
+        >
+          STATIONARY
+        </h1>
+      </div>
+
+      <!-- card carousel -->
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+        <!-- data-bs-ride="carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px; margin-top: 4%; margin-bottom: 1%"
+            >
+              <!-- card 1 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Set of 8 Inspirational Bookmarks</h5>
+                  <p class="card-text-1">&#8377;276</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Set of 3 Colorful Butterfly Bookmarks
+                  </h5>
+                  <p class="card-text-1">&#8377;303</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Set of 8 Nature-Themed Bookmarks</h5>
+                  <p class="card-text-1">&#8377;380</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Set of 6 Cute Cartoon Bookmarks</h5>
+                  <p class="card-text-1">&#8377;131</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 5 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Set of 6 Double Tip Highlighters</h5>
+                  <p class="card-text-1">&#8377;164</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Set of 6 IceCream Cone Highlighters
+                  </h5>
+                  <p class="card-text-1">&#8377;177</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px; margin-top: 4%; margin-bottom: 1%"
+            >
+              <!-- card 7 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Set of 5 Cute Bunny Sticky Notes</h5>
+                  <p class="card-text-1">&#8377;307</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 8 -->
+              <div class="card" style="width: 20rem;">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Set of 4 Aesthetic Daily Plan Sticky Notes
+                  </h5>
+                  <p class="card-text-1">&#8377;265</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 9 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">10 Pastel Palette Sticky Notes</h5>
+                  <p class="card-text-1">&#8377;209</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Handmade A5 Boho Journal</h5>
+                  <p class="card-text-1">&#8377;398</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">A5 Blue Coloured Moon Journal</h5>
+                  <p class="card-text-1">&#8377;358</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card" style="width: 20rem">
+                <button class="wishlist-button">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="stationary/s12.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Vintage Brown Journal With Leaf Tassel
+                  </h5>
+                  <p class="card-text-1">&#8377;362</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+
+          <button
+            class="carousel-control-prev button-set"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next button-set"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!--divs area-->
+    <div class="container-2">
+      <div class="div-photo">
+        <a href="25books/25bookweb.html"><img src="images/md1.png"></a></div>
+      <div class="div-photo">
+        <a href="/editor/25bookweb.html"><img src="images/md2.png"></a>
+      </div>
+      
+    </div>
+
+    <hr style="margin: 30px; margin-bottom: 25px" />
+
+    <!--author of the month-->
+    <div class="Know_More">
+      <div class="section about-us">
+        <div class="container">
+          <div class="row" >
+            <div class="col-lg-6 offset-lg-1" style="width:fit-content">
+              <div class="accordion" id="accordionExample" style="background-color: #85450b; height:550px; width:550px; margin-top: -2%;">
+               <img src="images/Lynn-Painter.png" />
+              </div>
+            </div>
+            <div class="col-lg-5 align-self-left bg">
+              <div class="section-heading">
+
+                <div class="content" style="background-image: none; background-color: transparent; margin-top: 5%; width:600px ;">
+
+                  <section class="vh-50" style="width:300px;">
+                    <div class="container py-5 h-100" style="width:600px">
+                      <div class="row d-flex justify-content-left align-items-left">
+                        <div class="col-md-12 col-xl-5" style="width: 100%; margin-top: 70px;">
+                  
+                          <figure class="bg-body-tertiary p-4"
+                            style="border-left: 15px solid #fcfadc;  width: 99% !important ; background-color: #85450b  !important; border-radius: 9px;">
+                            <i class="fas fa-quote-left fa-2x mb-4" style="color: #fcfadc; "></i>
+                            <blockquote class="blockquote pb-2" style="color: #fcfadc;" >
+                              <p>
+                                When I'm around you, I kind of feel like I'm on drugs. Not that I do drugs. Unless you do drugs, in which case, I do them all the time. All of them
+                              </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mb-0" style="color: #deb997;">
+                              Lynn Painter in <cite title="Source Title">Better Than The Movies</cite>
+                            </figcaption>
+                          </figure>
+                  
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin-top: 80px; margin-bottom: 5px" />
+
+    <!--Featured authors-->
+
+    <div class="authorcontainer">
+      <div class="ath-heading heading-h1">
+        <h1>Featured Authors</h1>
+      </div>
+
+      <div id="carouselExampleIndicator_S" class="carousel carousel-dark slide">
+        <!-- data-bs-ride="carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px">
+              <div class="authorcard">
+                <!--1-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a1.png" alt="" />
+                    <div class="authortext">
+                      <p>Ana Huang</p>
+                    </div>
+                  </div>
+                </div>
+                <!--2-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a2.jpg" alt="" />
+                    <div class="authortext">
+                      <p>L.J. Shen</p>
+                    </div>
+                  </div>
+                </div>
+                <!--3-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a3.jpeg" alt="" />
+                    <div class="authortext">
+                      <p>H.D. Carlton</p>
+                    </div>
+                  </div>
+                </div>
+                <!--4-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a4.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Jay Shetty</p>
+                    </div>
+                  </div>
+                </div>
+                <!--5-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a5.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Chetan Bhagat</p>
+                    </div>
+                  </div>
+                </div>
+                <!--6-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a6.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Collen Hoover</p>
+                    </div>
+                  </div>
+                </div>
+                <!--7-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a7.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Robert Greene</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  item close -->
+            </div>
+          </div>
+          <!--  wrapperclose -->
+
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container d-flex justify-content-around card2"
+              style="max-width: 1435px"
+            >
+              <div class="authorcard">
+                <!--8-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a8.jpg" alt="" />
+                    <div class="authortext">
+                      <p>J.K. Rowling</p>
+                    </div>
+                  </div>
+                </div>
+                <!--9-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a9.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Sadhguru</p>
+                    </div>
+                  </div>
+                </div>
+                <!--10-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a10.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Elsie Silver</p>
+                    </div>
+                  </div>
+                </div>
+                <!--11-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a11.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Sarah J. Maas</p>
+                    </div>
+                  </div>
+                </div>
+                <!--12-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a12.jpg" alt="" />
+                    <div class="authortext">
+                      <p>John Green</p>
+                    </div>
+                  </div>
+                </div>
+                <!--13-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a13.jpeg" alt="" />
+                    <div class="authortext">
+                      <p>Rebecca Yarros</p>
+                    </div>
+                  </div>
+                </div>
+                <!--14-->
+                <div class="authorimg-text">
+                  <div class="authorimg">
+                    <img src="author/a14.jpg" alt="" />
+                    <div class="authortext">
+                      <p>Ali Hazelwood</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--AUTHOR CARD-->
+            </div>
+            <!--  item close -->
+          </div>
+          <!--  wrapperclose -->
+          <button
+            class="carousel-control-prev button-set"
+            type="button"
+            data-bs-target="#carouselExampleIndicator_S"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next button-set"
+            type="button"
+            data-bs-target="#carouselExampleIndicator_S"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+<!--chatbot-->
+<button class="chatbot-button" onclick="toggleChatbot()"></button>
+
+     <div id="chatbotWindow" class="chatbot-window">
+         <p>Hi Your BOOKEY BUDDY is here! How can I help you today?</p>
+         <div id="options">
+             <button class="option-button" onclick="sendOption('Book of the Month')">Book of the Month</button>
+             <button class="option-button" onclick="sendOption('Mystery Box')">Mystery Box</button>
+             <button class="option-button" onclick="sendOption('Deal of the Day')">Deal of the Day</button>
+             <button class="option-button" onclick="sendOption('New Arrivals')">New Arrivals</button>
+         </div>
+         <div id="chatContent"></div> 
+     </div>
+<!-- mysterybox -->
+<div class="mystery-box" onclick="showAlert();"></div>
+
+<div id="alertBox" class="custom-alert">
+    <img src="/bookey/images/mbbanner.png" alt="Mystery Box Banner">
+    <p>Do you want to buy the Mystery Box worth ₹1500?</p>
+    <button onclick="redirectToCart()">Buy Now</button>
+    <button onclick="hideAlert()">Cancel</button> <!-- Cancel button -->
+</div>
+
+    <!--footer-->
+    <footer class="footer">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+            <div class="rounded-circle shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 200px;">
+              <img src="images/logo-footer.png" height="100" alt=""
+                   loading="lazy" style="z-index: -0;"/>
+            </div>
+  
+            <p class="text-center">Bookey | BookStore</p>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Popular Series</h5>
+  
+            <ul class="list-unstyled list">
+              <li class="mb-2">
+                <a href="#!" class="text-white"> Robert Greene Combo</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">The Made Series</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!"class="text-white" >Summer I Turned Pretty Trilogy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!"class="text-white" >Shadow and Bone Trilogy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Percy Jackson Series</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!"class="text-white" >Harry Potter Box Set</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Popular Categories</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Fiction</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Combos & Box Sets</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Non-Fiction</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Young Adult</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"> Non Fiction</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Hindi Novels</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column--><!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Our Best Sellers</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Atomic Habits</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">It Ends With Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Do Epic Shit</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">The Song of Archillies</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">The 48 Laws Of Power</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">50 Shades Of Grey</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4"><br><br>Contact</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>4882/2, Haibowal Kalan, Ldh.</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>+91 7009699856</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>arorajanvi084@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: -30px;">
+            <h5 class="text-uppercase mb-4">Popular Authors</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Robin Sharma</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Colleen Hoover</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Vex King</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">James Clear</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Chetan Bhagat</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Robert Greene</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0"  style="margin-top: -30px;">
+            <h5 class="text-uppercase mb-4"><center>Visit us</center></h5>
+            <div class="div-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3422.6422339429096!2d75.80761767558792!3d30.924622874492215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDU1JzI4LjYiTiA3NcKwNDgnMzYuNyJF!5e0!3m2!1sen!2sin!4v1740723744156!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+  
+    </footer>
+      <div class="container2">
+        <div class="col-lg-12 foot">
+          <p><br>Copyright© 2025 <i>bookeybookstore</i></p>
+          <p><b>All rights reserved</b></p>
+        </div>
+      </div>
+    </footer>
+   <!---- end-->  
+
+
+
+    <script>
+      const timerText = document.getElementById("timer-text");
+
+      const now = new Date();
+      const tomorrow = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate() + 1
+      );
+      const endTime = new Date(
+        tomorrow.getFullYear(),
+        tomorrow.getMonth(),
+        tomorrow.getDate(),
+        0,
+        0,
+        0
+      );
+
+      setInterval(() => {
+        const currentTime = new Date().getTime();
+
+        const timeRemaining = endTime - currentTime;
+
+        const hours = Math.floor(timeRemaining / (60 * 60 * 1000));
+        const minutes = Math.floor(
+          (timeRemaining % (60 * 60 * 1000)) / (60 * 1000)
+        );
+        const seconds = Math.floor((timeRemaining % (60 * 1000)) / 1000);
+
+        const formattedTime = `${padZero(hours)}:${padZero(minutes)}:${padZero(
+          seconds
+        )}`;
+
+        timerText.textContent = formattedTime;
+
+        if (timeRemaining <= 0) {
+          timerText.textContent = "Deal has ended!";
+          clearInterval(this);
+        }
+      }, 1000);
+
+      function padZero(num) {
+        return (num < 10 ? "0" : "") + num;
+      }
+    </script>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menuOverlay = document.getElementById('menu-overlay');
+
+
+menuBtn.addEventListener('click', () => {
+menuOverlay.classList.add('active');
+
+});
+
+closeBtn.addEventListener('click', () => {
+menuOverlay.classList.remove('active');
+});
+
+backdrop.addEventListener('click', () => {
+menuOverlay.classList.remove('active');
+
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="web25book.css">
+  <script src="25book.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gyb6g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-...your integrity hash..." crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <div class="div-container">
+    <div class="logo">
+      <a href="/mainpage.html"><img src="/logo.png" /></a> 
+    </div>
+    <div class="nav">
+      <div id="drop-down">
+        <button id="menu-btn">
+          <i class="fa-solid fa-layer-group"></i>
+        </button>
+      
+        <div id="menu-overlay">
+          <header>
+            
+            <h2>Menu</h2>
+            <button class="close-btn" id="close-btn">&times;</button>
+
+            
+          </header>
+      
+          <div class="menu-items">
+            <ul>
+              <li>Categories</li>
+              <li>Book Bundles</li>
+              <li>Gifting</li>
+              <li>Upcoming Books</li>
+              <li>Deals of the Day</li>
+              <li>Customization</li>
+              <li>Stationary</li>
+            </ul>
+          </div>
+        </div>
+
+        </div>
+      <div id="search-bar">
+        <input
+          class="input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="button" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="icons">
+        <!-- <a href=""><i class="fa-regular fa-heart i-icon"></i></a> -->
+        <a href=""><i class="fa-solid fa-cart-shopping i-icon"></i></a>
+        <a href="/login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="wrapper">
+    <!-- Begin Left Column -->
+    <div id="leftcolumn">
+      <h1>Editor's Choice</h1>
+      <!--path-->
+      <nav
+        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb" style="color: #85450b;">
+          <li class="breadcrumb-item"><a href="/mainpage.html"
+              style="color: #85450b; text-decoration: none; padding-left: 14px;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: #85450b; padding-left: 14px;">Editor's
+            Choice</li>
+        </ol>
+      </nav>
+      <!--product categories-->
+      <div class="list-container">
+        <h5> Product Categories</h5>
+        <ul type="none">
+          <li></li>
+          <li>Combos & Book Sets</li>
+          <li>Action & Adventure</li>
+          <li>Fiction</li>
+          <li>Non Fiction</li>
+          <li>Crime, Thrillers & Mysteries</li>
+          <li>Poetry</li>
+          <li>Horror</li>
+          <li>Stationary</li>
+          <li>Custom Book Covers</li>
+        </ul>
+
+      </div>
+
+      <div class="list-container">
+        <h5> Popular Authors</h5>
+
+        <ul type="none">
+          <li>Durjoy Dutta</li>
+          <li>Ravinder Singh </li>
+          <li>Nonna Uppal</li>
+          <li>Amrita Pritam</li>
+          <li>Premchand</li>
+          <li>Prajakta Koli</li>
+          <li>Rebecca Yarros</li>
+          <li>Colleen Hoover</li>
+          <li>L.J. Shen</li>
+          <li>John Green</li>
+        </ul>
+
+      </div>
+      <div class="list-container">
+        <h5> Our Topsellers</h5>
+
+        <ul type="none">
+          <li>Twisted Love</li>
+          <li>The Summer I Turned Pretty</li>
+          <li>The Seven Husbands of Evelyn Hugo</li>
+          <li>Better Than the Movies</li>
+          <li>All This Love</li>
+          <li>Too Good to Be True</li>
+          <li>Fourth Wing</li>
+          <li>Terms And Conditions</li>
+          <li>A Million Kisses In Your Lifetime </li>
+          <li>Wuthering Heights</li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- End Left Column -->
+
+
+
+    <!-- Begin Right Column -->
+    <div id="rightcolumn">
+
+      <div class="anime-list">
+        <h1 class="title">Editor's Choice</h1>
+        <ul>
+
+          <li>
+            <div class="index" style="font-size: 27px; font-weight: bold;">
+              <span>Index</span>
+            </div>
+            <div class="release-year" style="font-size: 27px; font-weight: bold;">
+              <span>Published</span>
+            </div>
+            <div class="anime-name" style="font-size: 27px; font-weight: bold;">
+              <span>Title</span>
+            </div>
+            <div class="genere" style="font-size: 27px; font-weight: bold;">
+              <span>Author</span>
+            </div>
+            <div class="redirect-link" style="font-size: 27px; font-weight: bold;">
+              <span>Explore</span>
+            </div>
+
+          </li>
+
+
+
+          <li>
+            <div class="index">
+              <span>01</span>
+            </div>
+            <div class="release-year">
+              <span>February 4, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Attack On Titan">Deep End</span>
+            </div>
+            <div class="genere">
+              <span>Ali Hazelwood</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/212808709-deep-end?ref=trend_2_6" target="_blank">
+                <svg width="3rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1718998299i/212808709.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>02</span>
+            </div>
+            <div class="release-year">
+              <span>May 2, 2023</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Demon Slayer">Practice Makes Perfect</span>
+            </div>
+            <div class="genere">
+              <span>Sarah Adams</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/61897968-practice-makes-perfect?ref=trend_2_31"
+                target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659979546i/61897968.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>03</span>
+            </div>
+            <div class="release-year">
+              <span>July 11, 2023</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="your name">You, with a View</span>
+            </div>
+            <div class="genere">
+              <span>Jessica Joyce</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/59737396-you-with-a-view?ref=rae_8" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1665759407i/59737396.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>04</span>
+            </div>
+            <div class="release-year">
+              <span>January 7, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Jujutsu Kaisen">Beg, Borrow, or Steal</span>
+            </div>
+            <div class="genere">
+              <span>Sarah Adams</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/211164792-beg-borrow-or-steal?ref=rae_5" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1721061234i/211164792.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>05</span>
+            </div>
+            <div class="release-year">
+              <span>December 3, 2024</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="One Piece">PS: I Hate You</span>
+            </div>
+            <div class="genere">
+              <span>Lauren Connolly</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/209455843-ps?ref=rae_6" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710170075i/209455843.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>06</span>
+            </div>
+            <div class="release-year">
+              <span>January 21, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Weathering with You">Onyx Storm</span>
+            </div>
+            <div class="genere">
+              <span>Rebecca Yarros</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/209439446-onyx-storm?ref=rae_14" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1720446357i/209439446.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>07</span>
+            </div>
+            <div class="release-year">
+              <span>January 4, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Death Note">Phantom</span>
+            </div>
+            <div class="genere">
+              <span>H.D. Carlton</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/217987129-phantom?ref=rae_18" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1729405800i/217987129.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>08</span>
+            </div>
+            <div class="release-year">
+              <span>October 1, 2024</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Naruto">Rook & Rebel</span>
+            </div>
+            <div class="genere">
+              <span>Kate Crew</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/217534420-rook-rebel?ref=rae_9" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1723820272i/217534420.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>09</span>
+            </div>
+            <div class="release-year">
+              <span>July 5, 2024</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Suzume">What I Should Have Done</span>
+            </div>
+            <div class="genere">
+              <span>R.L. Atkinson</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/211117446-what-i-should-have-done?ref=rae_18"
+                target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1713488965i/211117446.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>10</span>
+            </div>
+            <div class="release-year">
+              <span>July 11, 2024</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="dragon ball">Sunshine and the Sheriff</span>
+            </div>
+            <div class="genere">
+              <span>Alina Lane</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/209702356-sunshine-and-the-sheriff?ref=rae_3"
+                target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1719486399i/209702356.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>11</span>
+            </div>
+            <div class="release-year">
+              <span>January 9, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="Arcane">Waiting on You</span>
+            </div>
+            <div class="genere">
+              <span>Nikki Ash</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/209043727-waiting-on-you?ref=rae_7" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1730288051i/209043727.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>12</span>
+            </div>
+            <div class="release-year">
+              <span>January 31, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="haikyuu">Cross-Checked</span>
+            </div>
+            <div class="genere">
+              <span>Julia Connors</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/213814340-cross-checked?ref=rae_16" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1728602185i/213814340.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>13</span>
+            </div>
+            <div class="release-year">
+              <span>
+                December 28, 2024</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="haikyuu">Break my Heart</span>
+            </div>
+            <div class="genere">
+              <span>Jennifer Sucevic</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/216739468-break-my-heart?ref=rae_19" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1731347683i/216739468.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+
+          <li>
+            <div class="index">
+              <span>14</span>
+            </div>
+            <div class="release-year">
+              <span>
+                February 11, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="haikyuu">First-Time Caller</span>
+            </div>
+            <div class="genere">
+              <span>B.K. Borison</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/213243908-first-time-caller" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1718283728i/213243908.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+          <li>
+            <div class="index">
+              <span>15</span>
+            </div>
+            <div class="release-year">
+              <span>
+                February 11, 2025</span>
+            </div>
+            <div class="anime-name">
+              <span data-value="haikyuu">Once Smitten, Twice Shy</span>
+            </div>
+            <div class="genere">
+              <span>Chloe Liese</span>
+            </div>
+            <div class="redirect-link">
+              <a href="https://www.goodreads.com/book/show/212294418-once-smitten-twice-shy?ref=rae_17" target="_blank">
+                <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hover-img">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1715101782i/212294418.jpg"
+                alt="anime-img" class="img-fluid">
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <!-- anime -->
+    </div>
+    <!-- rightcolumn -->
+  </div><!--wrapper-->
+
+
+  
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menuOverlay = document.getElementById('menu-overlay');
+
+
+menuBtn.addEventListener('click', () => {
+menuOverlay.classList.add('active');
+
+});
+
+closeBtn.addEventListener('click', () => {
+menuOverlay.classList.remove('active');
+
+});
+
+backdrop.addEventListener('click', () => {
+menuOverlay.classList.remove('active');
+
+});
+</script>
+</body>
+
+</html>

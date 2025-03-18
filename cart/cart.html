@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="bookbundles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz4fnFO9gyb6g5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-...your integrity hash..."
+            crossorigin="anonymous"></script>
+</head>
+
+<body>  
+    <style>
+        h2{
+            text-align: center;
+            color: #85450b;
+            font-size: 4.5rem;
+            text-shadow: 4px 10px 10px #85460b62;
+        }
+        .cart-item{
+            margin: auto;
+            margin-bottom: 3%;
+            display: flex;
+            width: 80%;
+            border: 1px solid #85450b;
+            border-radius: 5px;
+            padding-bottom: -3%;
+            box-shadow: 0px 10px 10px 5px #85460b9e;
+        }
+        #cart-container{
+            margin-top: 6%;
+            font-size: 2.5rem;
+        }
+        .content{
+            
+            padding-top: 1%;
+            padding-left: 2%;
+         .title{
+            font-size: 1.5rem;
+         }
+         .price{
+            color: rgb(179, 0, 0);
+            font-size: 1.1rem;
+         }
+        }
+        span{
+            font-size: 1.25rem;
+        }
+        .buttons{
+            display: flex;
+            .quantity{
+                font-size: 1rem;
+                border:2px solid black;
+                border-radius: 5px;
+                WIDTH:150PX;
+                display: flex;
+                justify-content: space-evenly;
+                height:40px;
+                align-items: center;
+                button{
+                    height: 80%;
+                    width:25px;
+                    background-color: white;
+                    border: none;
+                    border-right : 1px solid black;
+                    border-left : 1px solid black;
+                    
+                }
+            }
+            .remove{
+                margin-left: 2%;
+                WIDTH:100PX;   
+                height:40px;
+                align-items: center; 
+                font-size: 1rem;
+                border:2px solid #85450b;
+                border-radius: 5px;
+                background-color: #85450b;
+                color: #deb997;
+            }
+            .clear{
+                WIDTH:100PX;   
+                height:40px;
+                align-items: center; 
+                font-size: 1rem;
+                border:2px solid #85450b;
+                border-radius: 5px;
+                background-color: #85450b;
+                color: #deb997;
+            }
+        }
+    </style>
+    <div class="div-container">
+        <div class="logo">
+            <a href="/bookey/mainpage.html"><img src="/bookey/logo.png" /></a>
+        </div>
+        <div class="nav">
+            <div id="drop-down">
+                <button id="menu-btn">
+                    <i class="fa-solid fa-layer-group"></i>
+                </button>
+
+                <div id="menu-overlay">
+                    <header>
+                        <h2>Menu</h2>
+                        <button class="close-btn" id="close-btn">&times;</button>
+                    </header>
+
+                    <div class="menu-items">
+                        <ul>
+                            <li><a href="/bookey/main webpages/categories/category_main/categories.html"
+                                    style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Categories</a></li>
+                            <li><a href="/bookey/main webpages/book_bundles/1.html"
+                                    style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Book Bundles</a>
+                            </li>
+                            <li><a href="/bookey/main webpages/upcoming/upcomingbooks.html"
+                                    style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Upcoming Books</a>
+                            </li>
+                            <li><a href="/bookey/mainpage.html#dotd"
+                                    style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Deals of the
+                                    Day</a></li>
+                            <li><a href="/bookey/mainpage.html#stationary"
+                                    style="text-decoration: none; color:#ffffff; font-size: 1.5rem;">Stationary</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="search-bar">
+                <input class="input" type="search" placeholder="Search" aria-label="Search" />
+                <button class="button" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="icons">
+                <a href="/bookey/wishlist/wishlist.html"><i class="fa-regular fa-heart i-icon"></i></a>
+                <a href="/bookey/cart/cart.html"><i class="fa-solid fa-cart-shopping i-icon"></i>
+                <a href="/bookey/login/loginform.html"><i class="fa-solid fa-user i-icon"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <!-- Begin Left Column -->
+        <div id="leftcolumn">
+            <h1>Your Cart</h1>
+            <!--path-->
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb" style="color: #85450b;">
+                    <li class="breadcrumb-item"><a href="/bookey/mainpage.html"
+                            style="color: #85450b; text-decoration: none; padding-left: 14px;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: #85450b; padding-left: 14px;">
+                        Cart</li>
+                </ol>
+            </nav>
+            <!--product categories-->
+            <div class="list-container">
+                <h5> Popular Categories</h3>
+                    <ul type="none">
+                        <li><a href="/bookey/main webpages/categories/fiction/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Fiction</a></li>
+                        <li><a href="/bookey/main webpages/categories/non fiction/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Non Fiction</a></li>
+                        <li><a href="/bookey/main webpages/categories/cmt/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Crime, Mystery &
+                                Thrillers</a></li>
+                        <li><a href="/bookey/main webpages/categories/poetry/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Poetry</a></li>
+                        <li><a href="/bookey/main webpages/categories/horror/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Horror</a></li>
+                        <li><a href="/bookey/main webpages/categories/young_adult/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Teen Fiction</a></li>
+                        <li><a href="/bookey/main webpages/categories/fantasy/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Fantasy</a></li>
+                    </ul>
+            </div>
+
+            <div class="list-container">
+                <h5> Popular Authors</h3>
+
+                    <ul type="none">
+                        <li>Durjoy Dutta</li>
+                        <li>Ravinder Singh </li>
+                        <li>Nonna Uppal</li>
+                        <li>Amrita Pritam</li>
+                        <li>Premchand</li>
+                        <li>Prajakta Koli</li>
+                        <li>Rebecca Yarros</li>
+                    </ul>
+
+            </div>
+            <div class="list-container">
+                <h5> Our Topsellers</h3>
+                    <ul type="none">
+                        <li><a href="/bookey/main webpages/book_bundles/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">The Summer I Turned
+                                Pretty</a></li>
+                        <li><a href="/bookey/main webpages/categories/fiction/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Seven Husbands of Evelyn
+                                Hugo</a></li>
+                        <li><a href="/bookey/main webpages/categories/fiction/2.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">A Good Girl's Guide to
+                                Murder</a></li>
+                        <li><a href="/bookey/main webpages/categories/non fiction/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">Surrounded By Idiots</a>
+                        </li>
+                        <li><a href="/bookey/main webpages/categories/poetry/3.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">I Have To Tell You
+                                Something</a></li>
+                        <li><a href="/bookey/main webpages/categories/fantasy/1.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">The Fantasy League</a>
+                        </li>
+                        <li><a href="/bookey/main webpages/categories/young_adult/3.html"
+                                style="text-decoration: none; color: #85450b; font-size: 1rem;">I Am Not Jessica
+                                Chen</a></li>
+
+                    </ul>
+
+            </div>
+
+        </div>
+        <!-- End Left Column -->
+        <!-- Begin Right Column -->
+        <div id="rightcolumn">
+
+            <h2>Your Cart</h2>
+            <div id="cart-container"></div>
+           <center>
+            <label>
+                <input type="checkbox" id="first-time-user"> First-Time Users? Get 10% Off!
+            </label>
+
+            <h3>Total Price: ₹<span id="total-price">0</span></h3>
+
+            <button class="clear" onclick="clearCart()" style="WIDTH:100PX;   
+            height:40px;
+            align-items: center; 
+            font-size: 1rem;
+            border:2px solid #85450b;
+            border-radius: 5px;
+            background-color: #85450b;
+            color: #fcfadc;">Clear Cart</button>
+        </center>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            displayCart();
+            document.getElementById("first-time-user").addEventListener("change", applyDiscount);
+        });
+
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartContainer = document.getElementById("cart-container");
+            cartContainer.innerHTML = "";
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML = "<center>Your cart is empty.</p></center>  ";
+                updateTotalPrice();
+                return;
+            }
+
+            cart.forEach((item, index) => {
+                let cartItem = document.createElement("div");
+                cartItem.innerHTML = `
+                    <div class="cart-item">
+                    <div class="image">
+                    <img src="${item.imgSrc}" width="200" height:"200">
+                    </div>
+                    <div class="content">
+                    <p class="title"><strong>${item.title}</strong> <br><span>by ${item.author}</span></p>
+                    <p class ="price">₹${item.price}</p>
+                    <div class="buttons">
+                    <p class="quantity">Quantity: ${item.quantity} <button onclick="changeQuantity(${index}, -1)">-</button> <button onclick="changeQuantity(${index}, 1)">+</button></p>
+                    <button class="remove" onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                    </div>
+                    </div>
+                `;
+                cartContainer.appendChild(cartItem);
+            });
+
+            updateTotalPrice();
+        }
+
+        function updateTotalPrice() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            let discountCheckbox = document.getElementById("first-time-user");
+
+            if (discountCheckbox && discountCheckbox.checked) {
+                totalPrice *= 0.85; // Apply 15% discount
+            }
+
+            document.getElementById("total-price").innerText = totalPrice.toFixed(2);
+        }
+
+        function changeQuantity(index, amount) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            if (cart[index].quantity + amount > 0) {
+                cart[index].quantity += amount;
+            } else {
+                cart.splice(index, 1);
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+        }
+
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+        }
+
+        function clearCart() {
+            localStorage.removeItem("cart");
+            displayCart();
+        }
+
+        function applyDiscount() {
+            updateTotalPrice();
+        }
+    </script>
+
+</body>
+
+</html>

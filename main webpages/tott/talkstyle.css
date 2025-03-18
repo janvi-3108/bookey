@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.main-containertalk{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    z-index:-1;
+    margin-top: -5%;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px; /* Start below the viewport */
+    background: rgba(255, 255, 255, 0.6); /* Bubble color */
+    border-radius: 50%; /* Make it round */
+    animation: rise 20s infinite; /* Animation properties */
+}
+
+/* Varying sizes for bubbles */
+.bubble:nth-child(1) { width: 40px; height: 40px; left: 10%; animation-delay: 0s; }
+.bubble:nth-child(2) { width: 60px; height: 60px; left: 30%; animation-delay: 1s; }
+.bubble:nth-child(3) { width: 50px; height: 50px; left: 50%; animation-delay: 2s; }
+.bubble:nth-child(4) { width: 70px; height: 70px; left: 70%; animation-delay: 3s; }
+.bubble:nth-child(5) { width: 30px; height: 30px; left: 20%; animation-delay: 4s; }
+.bubble:nth-child(6) { width: 80px; height: 80px; left: 40%; animation-delay: 5s; }
+.bubble:nth-child(7) { width: 20px; height: 20px; left: 60%; animation-delay: 6s; }
+.bubble:nth-child(8) { width: 90px; height: 90px; left: 80%; animation-delay: 7s; }
+.bubble:nth-child(9) { width: 50px; height: 50px; left: 15%; animation-delay: 8s; }
+.bubble:nth-child(10) { width: 60px; height: 60px; left: 85%; animation-delay: 9s; }
+
+@keyframes rise {
+    to {
+        transform: translateY(-100vh); /* Move up out of view */
+        opacity: 0; /* Fade out */
+    }
+}
+body {
+
+  background: #000000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+
+}
+
+.card {
+  margin-top: 8%;
+  --card-bg-color: #2e2e2e;
+  --border-radius: 15px;
+  background: var(--card-bg-color);
+  width: 450px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+
+}
+
+.card_inner {
+  --border-size: 5px;
+  width: calc(100% - var(--border-size));
+  height: calc(100% - var(--border-size));
+  background: var(--card-bg-color);
+  position: absolute;
+  border-radius: var(--border-radius);
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+.card_inner::before {
+  --width: 90%;
+  --height: 135%;
+  width: var(--width);
+  height: var(--height);
+  top: calc(50% - var(--height) / 2);
+  left: calc(50% - var(--width) / 2);
+  content: "";
+  position: absolute;
+  background: linear-gradient(130deg,
+      rgb(255, 144, 249) 25%,
+      rgb(142, 123, 177) 96%);
+  z-index: -1;
+  filter: blur(20px);
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+
+
+}
+
+p {
+  font-size: 55px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+
+
+#center_content {
+  padding-left: 60px;
+}
+
+.main_content {
+  position: relative;
+  width: 64%;
+  height: 100%;
+  Float: right;
+
+}
+
+
+.about h3 {
+  padding-top: 110px;
+}
+
+.about div {
+  height: 100%;
+  width: 90%;
+  border-radius: 0.5em;
+  background-color: #121212;
+}
+
+.about div p {
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.skills ul {
+  height: 100%;
+  width: 60%;
+  border-radius: 0.5em;
+  background-color: #121212;
+  padding-bottom: 5px;
+
+}
+
+.skills ul li {
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+
+}
+
+.skills ul li:first-child {
+  padding-top: 20px;
+}
