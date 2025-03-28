@@ -35,6 +35,7 @@
     </head>
     
     <body>
+      <script src="wishlist.js"></script>
      
 <div class="page">
     <!-- nav bar -->
@@ -151,12 +152,14 @@
           <!-- Begin Right Column -->
           <div id="rightcolumn">
             <div class="banner"></div>
+            <div id="wishlist-container"></div>
             <div class="container-class">
 
               <!--row1-->
             <div class="row1">
             <!--card1-->
             <div class="card card-2" >
+              
               <button class="wishlist-button">
                 <i class="fa-regular fa-heart"></i>
               </button>
@@ -459,32 +462,82 @@
           </div>
         </div>
 </footer>  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const addToCartButtons = document.querySelectorAll('.btn.btn-primary');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', addToCart);
+    });
+  });
+
+   function addToCart(event) {
+    const button = event.currentTarget;
+    const card = button.closest('.card'); // Get the parent card element
+    const title = card.querySelector('.card-title').textContent; // Get the product title
+    const price = parseFloat(card.querySelector('.card-text-1').textContent.replace('₹', '')); // Parse price as a number
+    const imgSrc = card.querySelector('img').src; // Get the product image source
+    const author = card.querySelector('.card-text').textContent; // Get the author name
+
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItemIndex = cart.findIndex(item => item.title === title);
+
+    if (existingItemIndex !== -1) {
+      // If the item already exists, increase its quantity
+      cart[existingItemIndex].quantity += 1;
+    } else {
+      // Add a new item to the cart
+      cart.push({ title, price, imgSrc, author, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(`${title} has been added to your cart!`);
+  }
+</script>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const wishlistButtons = document.querySelectorAll('.wishlist-button');
+
     wishlistButtons.forEach(button => {
-        button.addEventListener('click', addToWishlist);
+      button.addEventListener('click', addToWishlist);
     });
-});
+  });
 
-function addToWishlist(event) {
-    const button = event.currentTarget; // Use event.currentTarget to get the button element
-    const icon = button.querySelector('i');
-    button.classList.toggle('added');
-    if (button.classList.contains('added')) {
-        icon.classList.remove('fa-regular');
-        icon.classList.add('fa-solid');
-        
+  function addToWishlist(event) {
+    const button = event.currentTarget; // Get the clicked button
+    const card = button.closest('.card'); // Get the parent card element
+    const title = card.querySelector('.card-title').textContent; // Get the product title
+    const price = parseFloat(card.querySelector('.card-text-1').textContent.replace('₹', '')); // Parse price as a number
+    const imgSrc = card.querySelector('img').src; // Get the product image source
+    const author = card.querySelector('.card-text').textContent; // Get the author name
+
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const existingItemIndex = wishlist.findIndex(item => item.title === title);
+
+    if (existingItemIndex !== -1) {
+      // If the item already exists, remove it from the wishlist
+      wishlist.splice(existingItemIndex, 1);
+      button.classList.remove('added');
+      const icon = button.querySelector('i');
+      icon.classList.remove('fa-solid');
+      icon.classList.add('fa-regular');
+      alert(`${title} has been removed from your wishlist!`);
     } else {
-        icon.classList.remove('fa-solid');
-        icon.classList.add('fa-regular');
-       
+      // Add a new item to the wishlist
+      wishlist.push({ title, price, imgSrc, author });
+      button.classList.add('added');
+      const icon = button.querySelector('i');
+      icon.classList.remove('fa-regular');
+      icon.classList.add('fa-solid');
+      alert(`${title} has been added to your wishlist!`);
     }
-}
-</script>
 
-   <script>
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  }
+</script>
+<script>
     const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 const menuOverlay = document.getElementById('menu-overlay');

@@ -15,6 +15,12 @@
 </head>
 
 <body>
+
+    <div class="div-container" id="div-container">
+        <div class="logo">
+          <a href="/bookey/mainpage.html"><img src="/bookey/logo.png" /></a> 
+        </div>
+    </div>
   <div class="main-containertalk">
     <div class="card">
         <div class="card_inner">
@@ -71,6 +77,24 @@
             <span class="bubble"></span>
         </div>
 
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById("div-container");
+        
+            window.addEventListener("scroll", function () {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = "-100px"; // Hide navbar
+                } else {
+                    // Scrolling up
+                    navbar.style.top = "0"; // Show navbar
+                }
+        
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+            });
+        </script>
    
 </body>
 

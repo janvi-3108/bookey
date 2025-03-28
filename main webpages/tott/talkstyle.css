@@ -174,3 +174,20 @@ body ul li {
 .skills ul li:first-child {
   padding-top: 20px;
 }
+
+#div-container {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+  height: 60px;
+  background-color: #deb997;
+}
+
+.logo img {
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+} 
