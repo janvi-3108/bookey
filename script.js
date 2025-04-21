@@ -58,7 +58,7 @@ function hideAlert() {
 }
 
 function redirectToCart() {
-    window.location.href = "cart.html";
+    window.location.href = "http://localhost/bookey/cart/cart.html";
 }
 
 // wishlist functionality

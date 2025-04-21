@@ -19,16 +19,14 @@ body {
   margin: auto;
   align-items: center;
   display: flex;
-  padding-top: 5px  ;
+  padding-top: 5px;
 }
-
 .nav {
   height: 50px;
   width: 100%;
   background-color: #85450b;
   display: flex;
   justify-content: space-between;
-
   #drop-down {
     height: 40px;
     width: 3%;
